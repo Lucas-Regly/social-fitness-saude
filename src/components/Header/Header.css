@@ -1,0 +1,67 @@
+.header {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #000000e1 20%, transparent);
+    padding: 50px 80px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: fixed;
+}
+
+.logo {
+    width: 230px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logo-frase {
+    font-size: 35px;
+    font-style: italic;
+    flex-direction: column;
+    font-weight: 900;
+    color: #fff;
+}
+
+.logo-frase span {
+    color:#FFD700;
+
+}
+
+.header-main-nav {
+    gap: 20px;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.header-main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.header-main-nav a::before {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #FFD700;
+    position: absolute;
+    top: 50%;
+    transform: rotate(165deg);
+}
+
+.header-main-nav a:hover::before {
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.header-main-nav a:hover {
+    color: #FFD700;
+    transition: all .5s ease-in-out;
+}
