@@ -100,7 +100,7 @@ const Home = () => {
         <div className='home-banner-dois'>
           <div className='hbd-container'>
             <h2>INSCREVA-SE AGORA PARA OBTER MAIS OFERTAS</h2>
-            <p>ONDE SAÚDE, BELEZA E FITNESS SE ENCONTRAM.</p>
+            <p>ONDE SAÚDE, BELEZA E FITNESS SE ENCONTRAM!</p>
           </div>
         </div>
       </section>
