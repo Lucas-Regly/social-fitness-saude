@@ -1,10 +1,25 @@
 import { React, useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import './Home.css';
+
 import Whychoseus from '../../components/whychoseus/whychoseus';
 import Oquepodemosoferecer from '../../components/oquepodemosoferecer/oquepodemosoferecer';
 import Npcard from '../../components/npcard/npcard';
 import CarouselCards from '../../components/CarouselCards/CarouselCards';
+
+import oqoImg1 from '/assets/casal-treinando.jpg';
+import oqoImg2 from '/assets/spinning-img.jpg';
+import oqoImg3 from '/assets/strongman-img.jpg';
+import oqoImg4 from '/assets/zumba-img.jpg';
+import oqoImg5 from '/assets/boxing-img.jpg';
+
+import ciImage1 from '/assets/trainer-homem-1.jpg';
+import ciImage2 from '/assets/trainer-mulher-1.jpg';
+import ciImage3 from '/assets/trainer-homem-2.jpg';
+import ciImage4 from '/assets/trainer-mulher-2.jpg';
+import ciImage5 from '/assets/trainer-homem-3.jpg';
+import ciImage6 from '/assets/trainer-mulher-3.jpg'
+
 const Home = () => {
   const pqNosEscolheu = [
     { icone: <i class='fa-solid fa-dumbbell'></i>, titulo: 'Variedade de Equipamentos', paragrafo: 'Oferecemos uma ampla variedade de equipamentos de alta qualidade, garantindo uma experiência completa e eficaz para nossos alunos.' },
@@ -12,11 +27,11 @@ const Home = () => {
     { icone: <i class="fa-solid fa-book"></i>, titulo: 'Ficha de treinamento personalizada', paragrafo: 'Ofereceremos um serviço de treino personalizado, adaptado às necessidades e objetivos individuais que você precisa.' }
   ]
   const oqPodemosOferecer = [
-    { img: './src/assets/casal-treinando.jpg', title: 'Musculação' },
-    { img: './src/assets/spinning-img.jpg', title: 'Spinning' },
-    { img: './src/assets/strongman-img.jpg', title: 'Powerlifter' },
-    { img: './src/assets/zumba-IMG.jpg', title: 'Zumba' },
-    { img: './src/assets/boxing-img.jpg', title: 'Boxe' }
+    { img: oqoImg1, title: 'Musculação' },
+    { img: oqoImg2, title: 'Spinning' },
+    { img: oqoImg3, title: 'Powerlifter' },
+    { img: oqoImg4, title: 'Zumba' },
+    { img: oqoImg5, title: 'Boxe' }
   ]
   const npCard = [
     { h4: 'Mensal', valor: 'R$ 100.0' },
@@ -24,12 +39,12 @@ const Home = () => {
     { h4: 'Anual', valor: 'R$ 80.0' }
   ]
   const carouselImage = [
-    { img: './src/assets/trainer-homem-1.jpg', funcao: 'TREINADOR', nomeProfessor: 'Professor 1' },
-    { img: './src/assets/trainer-mulher-1.jpg', funcao: 'TREINADORA', nomeProfessor: 'Professora 1' },
-    { img: './src/assets/trainer-homem-2.jpg', funcao: 'TREINADOR', nomeProfessor: 'Professor 2' },
-    { img: './src/assets/trainer-mulher-2.jpg', funcao: 'TREINADORA', nomeProfessor: 'Professora 2' },
-    { img: './src/assets/trainer-homem-3.jpg', funcao: 'TREINADOR', nomeProfessor: 'Prodessor 3' },
-    { img: './src/assets/trainer-mulher-3.jpg', funcao: 'TREINADORA', nomeProfessor: 'Professora 3' }
+    { img: ciImage1, funcao: 'TREINADOR', nomeProfessor: 'Professor 1' },
+    { img: ciImage2, funcao: 'TREINADORA', nomeProfessor: 'Professora 1' },
+    { img: ciImage3, funcao: 'TREINADOR', nomeProfessor: 'Professor 2' },
+    { img: ciImage4, funcao: 'TREINADORA', nomeProfessor: 'Professora 2' },
+    { img: ciImage5, funcao: 'TREINADOR', nomeProfessor: 'Prodessor 3' },
+    { img: ciImage6, funcao: 'TREINADORA', nomeProfessor: 'Professora 3' }
   ]
 
   const carousel = useRef();
@@ -41,7 +56,7 @@ const Home = () => {
   return (
     <main>
       <section className='home-banner'>
-        <div className=' banner'>
+        <div className=' banner' >
           <div className='home-banner-container'>
             <p className='home-banner-paragrafo'>MODELE SEU CORPO</p>
             <motion.h1 className='home-banner-titulo'>SEJA <span>FORTE</span> <br /> <span> TREINE</span> FORTE</motion.h1>

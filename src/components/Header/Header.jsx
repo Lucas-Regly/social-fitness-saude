@@ -1,10 +1,12 @@
 import React from 'react'
 import './Header.css'
+import fotoLogo from '/assets/social-logo.jpg'
 const Header = () => {
   return (
     <header className='header flex'>
       <div className='logo flex'>
-        <img className='logo-img' src="./src/assets/social-logo.jpg" alt="Social Logo ©" />
+        <img className='logo-img' src={fotoLogo} alt="Social Logo ©" />
+
         <div className='logo-frase flex'>
           <p>Social</p>
           <span>Fitness</span>
